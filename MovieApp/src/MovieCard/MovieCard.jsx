@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const MovieCard = ({ movie: { imdbID, Year, Poster, Title, Type } }) => {
     return (
         <div className="movie" key={imdbID}>
@@ -20,5 +22,14 @@ const MovieCard = ({ movie: { imdbID, Year, Poster, Title, Type } }) => {
     );
 };
 
-export default MovieCard;
+MovieCard.propTypes = {
+    movie: PropTypes.shape({
+        imdbID: PropTypes.string.isRequired,
+        Year: PropTypes.string.isRequired,
+        Poster: PropTypes.string.isRequired,
+        Title: PropTypes.string.isRequired,
+        Type: PropTypes.string.isRequired,
+    }).isRequired,
+};
 
+export default MovieCard;

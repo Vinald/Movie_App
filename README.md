@@ -5,7 +5,7 @@ Single Page Movie App built in React
 ## Run the app
 
 1. Clone the Repo
-2. open the terminal in the cloned Pepo
+2. open the terminal in the cloned Repo
 3. Install NodeJD
 4. Navigate to the project directory
 5. Install dependencies `npm install`
